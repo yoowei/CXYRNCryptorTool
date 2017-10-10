@@ -30,7 +30,8 @@
 #import <Security/SecRandom.h>
 #import <fcntl.h>
 
-extern int SecRandomCopyBytes(SecRandomRef rnd, size_t count, uint8_t *bytes) __attribute__((weak_import));
+//这个被注释掉的东西，以后有机会再研究下
+//extern int SecRandomCopyBytes(SecRandomRef rnd, size_t count, uint8_t *bytes) __attribute__((weak_import));
 extern int
 CCKeyDerivationPBKDF( CCPBKDFAlgorithm algorithm, const char *password, size_t passwordLen,
                      const uint8_t *salt, size_t saltLen,
